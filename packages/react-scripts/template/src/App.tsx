@@ -1,9 +1,9 @@
-import * as Preact from 'preact';
+import { h, Component } from 'preact';
 import './App.css';
 
 const logo = require('./logo.svg');
 
-class App extends Preact.Component<null, null> {
+class App extends Component<null, null> {
   render() {
     return (
       <div className="App">
