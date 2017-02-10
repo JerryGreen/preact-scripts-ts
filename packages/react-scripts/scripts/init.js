@@ -24,10 +24,10 @@ module.exports = function(appPath, appName, verbose, originalDirectory) {
 
   // Setup the script rules
   appPackage.scripts = {
-    'start': 'react-scripts-ts start',
-    'build': 'react-scripts-ts build',
-    'test': 'react-scripts-ts test --env=jsdom',
-    'eject': 'react-scripts-ts eject'
+    'start': 'preact-scripts-ts start',
+    'build': 'preact-scripts-ts build',
+    'test': 'preact-scripts-ts test --env=jsdom',
+    'eject': 'preact-scripts-ts eject'
   };
 
   fs.writeFileSync(
@@ -74,9 +74,9 @@ module.exports = function(appPath, appName, verbose, originalDirectory) {
       verbose && '--verbose'
     ].filter(function(e) { return e; });
   }
-  args.push('react', 'react-dom', '@types/node', '@types/react', '@types/react-dom', '@types/jest');
+  args.push('preact', '@types/node', '@types/jest');
 
-  console.log('Installing react and react-dom using ' + command + '...');
+  console.log('Installing preact using ' + command + '...');
   console.log();
 
   var proc = spawn(command, args, {stdio: 'inherit'});

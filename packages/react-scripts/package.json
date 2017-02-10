@@ -1,5 +1,5 @@
 {
-  "name": "react-scripts-ts",
+  "name": "preact-scripts-ts",
   "version": "1.0.6",
   "description": "Configuration and scripts for Create React App.",
   "repository": "wmonk/create-react-app",
@@ -19,7 +19,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts-ts": "./bin/react-scripts-ts.js"
+    "preact-scripts-ts": "./bin/preact-scripts-ts.js"
   },
   "dependencies": {
     "autoprefixer": "6.5.1",
