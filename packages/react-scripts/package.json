@@ -1,14 +1,14 @@
 {
-  "name": "preact-scripts-ts",
+  "name": "@jmfirth/preact-scripts-ts",
   "version": "1.0.6",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "wmonk/create-react-app",
+  "repository": "jmfirth/create-preact-app-typescript",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/wmonk/create-react-app/issues"
+    "url": "https://github.com/jmfirth/create-preact-app-typescript/issues"
   },
   "files": [
     ".babelrc",
