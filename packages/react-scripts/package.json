@@ -1,6 +1,6 @@
 {
-  "name": "@jmfirth/preact-scripts-ts",
-  "version": "1.0.6",
+  "name": "preact-scripts-ts-test",
+  "version": "0.0.3",
   "description": "Configuration and scripts for Create React App.",
   "repository": "jmfirth/create-preact-app-typescript",
   "license": "BSD-3-Clause",
