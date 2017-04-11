@@ -43,10 +43,10 @@ module.exports = function(
 
   // Setup the script rules
   appPackage.scripts = {
-    start: 'react-scripts start',
-    build: 'react-scripts build',
-    test: 'react-scripts test --env=jsdom',
-    eject: 'react-scripts eject',
+    start: 'preact-scripts-ts start',
+    build: 'preact-scripts-ts build',
+    test: 'preact-scripts-ts test --env=jsdom',
+    eject: 'preact-scripts-ts eject',
   };
 
   fs.writeFileSync(
@@ -126,7 +126,7 @@ module.exports = function(
   // which doesn't install react and react-dom along with react-scripts
   // or template is presetend (via --internal-testing-template)
   if (!isReactInstalled(appPackage) || template) {
-    console.log(`Installing react and react-dom using ${command}...`);
+    console.log(`Installing preact using ${command}...`);
     console.log();
 
     const proc = spawn.sync(command, args, { stdio: 'inherit' });
