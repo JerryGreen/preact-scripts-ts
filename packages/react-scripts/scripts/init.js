@@ -26,10 +26,10 @@ module.exports = function(appPath, appName, verbose, originalDirectory, template
 
   // Setup the script rules
   appPackage.scripts = {
-    'start': 'react-scripts start',
-    'build': 'react-scripts build',
-    'test': 'react-scripts test --env=jsdom',
-    'eject': 'react-scripts eject'
+    'start': 'preact-scripts-ts start',
+    'build': 'preact-scripts-ts build',
+    'test': 'preact-scripts-ts test --env=jsdom',
+    'eject': 'preact-scripts-ts eject'
   };
 
   fs.writeFileSync(
@@ -80,7 +80,7 @@ module.exports = function(appPath, appName, verbose, originalDirectory, template
       verbose && '--verbose'
     ].filter(function(e) { return e; });
   }
-  args.push('react', 'react-dom');
+  args.push('preact', '@types/node');
 
   // Install additional template dependencies, if present
   var templateDependenciesPath = path.join(appPath, '.template.dependencies.json');
@@ -96,7 +96,7 @@ module.exports = function(appPath, appName, verbose, originalDirectory, template
   // which doesn't install react and react-dom along with react-scripts
   // or template is presetend (via --internal-testing-template)
   if (!isReactInstalled(appPackage) || template) {
-    console.log('Installing react and react-dom using ' + command + '...');
+    console.log('Installing preact using ' + command + '...');
     console.log();
 
     var proc = spawn.sync(command, args, {stdio: 'inherit'});
@@ -153,7 +153,6 @@ function isReactInstalled(appPackage) {
   var dependencies = appPackage.dependencies || {};
 
   return (
-    typeof dependencies.react !== 'undefined' &&
-    typeof dependencies['react-dom'] !== 'undefined'
+    typeof dependencies.preact !== 'undefined'
   )
 }
