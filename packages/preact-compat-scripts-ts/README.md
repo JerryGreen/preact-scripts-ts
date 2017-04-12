@@ -1,4 +1,4 @@
-# `preact-scripts-ts` [![npm version](https://badge.fury.io/js/preact-scripts-ts.svg)](https://badge.fury.io/js/preact-scripts-ts)
+# `preact-compat-scripts-ts` [![npm version](https://badge.fury.io/js/preact-scripts-ts.svg)](https://badge.fury.io/js/preact-compat-scripts-ts)
 
 Create React-compatable apps with Preact (and Typescript) with no build configuration.
 
