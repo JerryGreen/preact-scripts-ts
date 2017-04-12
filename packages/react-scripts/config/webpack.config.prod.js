@@ -83,7 +83,7 @@ module.exports = {
     // We also include JSX as a common component filename extension to support
     // some tools, although we do not recommend using it, see:
     // https://github.com/facebookincubator/create-react-app/issues/290
-    extensions: ['.ts', '.tsx', '.js', '.json', '.jsx', ''],
+    extensions: ['.ts', '.tsx', '.js', '.json', '.jsx'],
     alias: {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
@@ -115,12 +115,9 @@ module.exports = {
             // @remove-on-eject-begin
             // Point ESLint to our predefined config.
             options: {
-              // TODO: consider separate config for production,
-              // e.g. to enable no-console and no-debugger only in production.
               baseConfig: {
                 extends: ['react-app'],
               },
-              useEslintrc: false,
             },
             // @remove-on-eject-end
             loader: 'tslint-loader',
@@ -165,15 +162,9 @@ module.exports = {
       },
       // Compile .tsx?
       {
-        test: /\.(ts|tsx)$/,
-        include: paths.appSrc,
-        loader: 'babel-loader',
-        // @remove-on-eject-begin
-        options: {
-          babelrc: false,
-          presets: [require.resolve('babel-preset-react-app')],
-        },
-        // @remove-on-eject-end
+        test: /\.ts(x?)$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader!ts-loader'
       },
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.

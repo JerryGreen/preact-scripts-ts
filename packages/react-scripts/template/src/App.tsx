@@ -3,7 +3,7 @@ import './App.css';
 
 const logo = require('./logo.svg');
 
-class App extends Component<null, null> {
+class App extends Component<{}, {}> {
   render() {
     return (
       <div className="App">
