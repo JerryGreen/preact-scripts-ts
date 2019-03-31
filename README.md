@@ -1,5 +1,7 @@
 # `preact-scripts-ts` [![npm version](https://badge.fury.io/js/preact-scripts-ts.svg)](https://badge.fury.io/js/preact-scripts-ts)
 
+> Notice: this is a light update of a abondoned [jmfirth/create-preact-app-typescript](https://github.com/jmfirth/create-preact-app-typescript)
+
 Create Preact apps (with Typescript) with no build configuration.
 
 Compressed output:
@@ -31,4 +33,4 @@ When you run `npm run build` the terminal will output the error, including the h
 
 ## Credits
 
-Forked from [react-scripts-ts](https://github.com/wmonk/create-react-app-typescript) by William Monk.
+Forked from [jmfirth/create-preact-app-typescript](https://github.com/jmfirth/create-preact-app-typescript) by William Monk.
