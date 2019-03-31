@@ -1,4 +1,4 @@
-# `preact-scripts-ts` [![npm version](https://badge.fury.io/js/preact-scripts-ts.svg)](https://badge.fury.io/js/preact-scripts-ts)
+# `preact-scripts-ts` [![npm version](https://badge.fury.io/js/@jerrygreen%2Fpreact-scripts-ts.svg)](https://badge.fury.io/js/@jerrygreen%2Fpreact-scripts-ts)
 
 > Notice: this is a light update of a abondoned [jmfirth/create-preact-app-typescript](https://github.com/jmfirth/create-preact-app-typescript)
 
@@ -16,21 +16,27 @@ File sizes after gzip:
 ## tl;dr
 
 ```sh
-npm install -g create-react-app
+yarn install -g create-react-app
 
-create-react-app my-app --scripts-version=preact-scripts-ts
+create-react-app my-app --scripts-version=@jerrygreen/preact-scripts-ts
 cd my-app/
-npm start
+yarn start
+```
+
+# If you already have a repo
+
+```
+yarn install @jerrygreen/preact-scripts-ts
 ```
 
 ## Additional Features
 
 **Code highlighting on error**
 
-When you run `npm run build` the terminal will output the error, including the highlighted sourecode (like babel)!
+When you run `yarn build` the terminal will output the error, including the highlighted sourecode (like babel)!
 
 ![CodeHighlight](https://cloud.githubusercontent.com/assets/175278/22310149/1ee66ccc-e346-11e6-83ff-e3a053701fb4.gif)
 
 ## Credits
 
-Forked from [jmfirth/create-preact-app-typescript](https://github.com/jmfirth/create-preact-app-typescript) by William Monk.
+Forked from [jmfirth/create-preact-app-typescript](https://github.com/jmfirth/create-preact-app-typescript).
